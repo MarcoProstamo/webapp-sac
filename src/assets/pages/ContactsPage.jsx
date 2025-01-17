@@ -9,6 +9,7 @@ export default function ContactsPage() {
             <th scope="col"></th>
             <th scope="col">Name</th>
             <th scope="col">Surname</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
@@ -27,6 +28,14 @@ export default function ContactsPage() {
                 </td>
                 <td>{guest.name}</td>
                 <td>{guest.surname}</td>
+                <td className="text-center">
+                  <button className="btn btn-warning mx-2">
+                    <i className="fa-solid fa-pencil"></i>
+                  </button>
+                  <button className="btn btn-danger">
+                    <i className="fa-solid fa-trash"></i>
+                  </button>
+                </td>
               </tr>
             ))}
         </tbody>
@@ -53,19 +62,79 @@ export default function ContactsPage() {
                     ></button>
                   </div>
                   <div className="modal-body">
-                    <ul className="list-unstyled">
-                      <li>{guest.age}</li>
-                      <li>{guest.cellphone_number}</li>
-                      <li>{guest.blood_type}</li>
-                      <li>{guest.email}</li>
-                      <li>{guest.fiscal_code}</li>
-                      <li>{guest.address}</li>
-                      <li>{guest.passport_number}</li>
-                      <li>{guest.dietary_preferences}</li>
-                      <li>{guest.allergies}</li>
-                      <li>{guest.languages_spoken}</li>
-                      <li>{guest.emergency_contact.phone}</li>
-                      <li>{guest.travel_insurance}</li>
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item">
+                        Age:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.age}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Cellphone Number:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.cellphone_number}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Blood Type:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.blood_type}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Email:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.email}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Fiscal Code:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.fiscal_code}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Address:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.address}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Passport number:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.passport_number}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Dietary Preferences:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.dietary_preferences}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Allergies:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.allergies}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Languages Spoken:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.languages_spoken}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Emergency Contact:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.emergency_contact.phone}
+                        </span>
+                      </li>
+                      <li className="list-group-item">
+                        Travel Insurance:{" "}
+                        <span class="badge fs-6 text-bg-secondary">
+                          {guest.travel_insurance}
+                        </span>
+                      </li>
                     </ul>
                   </div>
                   <div className="modal-footer d-flex justify-content-between">
