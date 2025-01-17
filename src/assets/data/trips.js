@@ -6,7 +6,7 @@ export const trips = [
     departure_date: "2025-06-15",
     arrival_date: "2025-06-20",
     duration: "5 days",
-    guest_number: 2,
+    guest_number: 5,
     emergency_number: "118",
   },
   {
@@ -16,7 +16,7 @@ export const trips = [
     departure_date: "2025-07-01",
     arrival_date: "2025-07-05",
     duration: "4 days",
-    guest_number: 6,
+    guest_number: 7,
     emergency_number: "112",
   },
   {
@@ -26,7 +26,7 @@ export const trips = [
     departure_date: "2025-08-10",
     arrival_date: "2025-08-20",
     duration: "10 days",
-    guest_number: 3,
+    guest_number: 6,
     emergency_number: "911",
   },
   {
@@ -36,7 +36,7 @@ export const trips = [
     departure_date: "2025-09-05",
     arrival_date: "2025-09-15",
     duration: "10 days",
-    guest_number: 10,
+    guest_number: 6,
     emergency_number: "110",
   },
   {
@@ -46,7 +46,7 @@ export const trips = [
     departure_date: "2025-10-01",
     arrival_date: "2025-10-15",
     duration: "14 days",
-    guest_number: 7,
+    guest_number: 6,
     emergency_number: "000",
   },
 ];

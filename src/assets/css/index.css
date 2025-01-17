@@ -13,6 +13,13 @@ body {
   font-weight: bold;
 }
 
+.avatar.big {
+  width: 50px;
+  background-color: aliceblue;
+  line-height: 50px;
+  color: black;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

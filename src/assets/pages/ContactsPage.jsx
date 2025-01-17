@@ -120,7 +120,7 @@ export default function ContactsPage() {
                       <li className="list-group-item">
                         Languages Spoken:{" "}
                         <span class="badge fs-6 text-bg-secondary">
-                          {guest.languages_spoken}
+                          {guest.languages_spoken.join(", ")}
                         </span>
                       </li>
                       <li className="list-group-item">
@@ -166,7 +166,7 @@ export default function ContactsPage() {
               aria-labelledby="exampleModalLabel"
               aria-hidden="true"
             >
-              <div className="modal-dialog">
+              <div className="modal-dialog modal-dialog-centered">
                 <div className="modal-content">
                   <div className="modal-header">
                     <h1 className="modal-title fs-5" id="exampleModalLabel">
