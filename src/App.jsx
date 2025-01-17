@@ -4,6 +4,8 @@ import TripPage from "./assets/pages/TripPage";
 import ContactsPage from "./assets/pages/ContactsPage";
 import NotFoundPage from "./assets/pages/NotFoundPage";
 import DefaultLayout from "./assets/layout/DefaultLayout";
+import AddNewTripPage from "./assets/pages/AddNewTripPage";
+import NewMembersPage from "./assets/pages/NewMembersPage";
 
 export default function App() {
   return (
@@ -13,6 +15,12 @@ export default function App() {
           <Route path="/trips">
             <Route index element={<HomePage></HomePage>} />
             <Route path=":id" element={<TripPage></TripPage>} />
+            <Route path="newtrip" element={<AddNewTripPage></AddNewTripPage>}>
+              <Route
+                path=":id/newmembers"
+                element={<NewMembersPage></NewMembersPage>}
+              />
+            </Route>
           </Route>
           <Route path="/contacts" element={<ContactsPage></ContactsPage>} />
           <Route path="*" element={<NotFoundPage></NotFoundPage>} />
