@@ -1,3 +1,6 @@
+import { useParams } from "react-router-dom";
+
 export default function TripPage() {
-  return <h1>TripPage</h1>;
+  const { id } = useParams();
+  return <h1>TripPage {id}</h1>;
 }
