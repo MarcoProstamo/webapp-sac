@@ -22,7 +22,11 @@ export default function ContactsPage() {
                 data-bs-target={"#modal" + guest.id}
               >
                 <td className="text-center">
-                  <div className="d-inline-block avatar text-bg-light">
+                  <div
+                    className={`d-inline-block avatar ${
+                      guest.isStaff ? "text-bg-danger" : "text-bg-light"
+                    }`}
+                  >
                     {guest.name.charAt(0)}
                   </div>
                 </td>

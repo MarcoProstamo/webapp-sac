@@ -1,5 +1,6 @@
 export const guests = [
   {
+    isStaff: true,
     id: 1,
     trip_id: 1,
     name: "Tiziano",
@@ -20,6 +21,7 @@ export const guests = [
     additional_bookings: ["Tour della città", "Spa"],
   },
   {
+    isStaff: false,
     id: 2,
     trip_id: 1,
     name: "Maria",
@@ -41,6 +43,7 @@ export const guests = [
     special_notes: "Necessita di accesso per sedia a rotelle.",
   },
   {
+    isStaff: false,
     id: 3,
     trip_id: 2,
     name: "Luca",
@@ -62,6 +65,7 @@ export const guests = [
     special_notes: "Vorrebbe una camera con vista mare.",
   },
   {
+    isStaff: false,
     id: 4,
     trip_id: 2,
     name: "Chiara",
@@ -83,6 +87,7 @@ export const guests = [
     special_notes: "Soffre di claustrofobia.",
   },
   {
+    isStaff: false,
     id: 5,
     trip_id: 3,
     name: "Federico",
@@ -104,6 +109,7 @@ export const guests = [
     special_notes: "Richiesta di un letto matrimoniale.",
   },
   {
+    isStaff: false,
     id: 6,
     trip_id: 3,
     name: "Giulia",
@@ -125,6 +131,7 @@ export const guests = [
     special_notes: "Necessità di pasti senza glutine.",
   },
   {
+    isStaff: false,
     id: 7,
     trip_id: 4,
     name: "Marco",
@@ -146,6 +153,7 @@ export const guests = [
     special_notes: "Viaggia con un animale domestico.",
   },
   {
+    isStaff: false,
     id: 8,
     trip_id: 4,
     name: "Elena",
@@ -167,6 +175,7 @@ export const guests = [
     special_notes: "Richiesta di colazione vegana.",
   },
   {
+    isStaff: false,
     id: 9,
     trip_id: 5,
     name: "Alessandro",
@@ -188,6 +197,7 @@ export const guests = [
     special_notes: "Camera al piano terra.",
   },
   {
+    isStaff: false,
     id: 10,
     trip_id: 5,
     name: "Valentina",
@@ -209,6 +219,7 @@ export const guests = [
     special_notes: "Preferisce attività all'aperto.",
   },
   {
+    isStaff: false,
     id: 11,
     trip_id: 2,
     name: "Sofia",
@@ -234,6 +245,7 @@ export const guests = [
     special_notes: "Richiesta di pasti senza glutine",
   },
   {
+    isStaff: false,
     id: 12,
     trip_id: 4,
     name: "Lorenzo",
@@ -255,6 +267,7 @@ export const guests = [
     special_notes: "Nessuna",
   },
   {
+    isStaff: true,
     id: 13,
     trip_id: 3,
     name: "Davide",
@@ -276,6 +289,7 @@ export const guests = [
     special_notes: "Accesso per sedia a rotelle",
   },
   {
+    isStaff: false,
     id: 14,
     trip_id: 1,
     name: "Giuseppe",
@@ -297,6 +311,7 @@ export const guests = [
     special_notes: "Camera tranquilla",
   },
   {
+    isStaff: false,
     id: 15,
     trip_id: 2,
     name: "Giuseppe",
@@ -318,6 +333,7 @@ export const guests = [
     special_notes: "Richiesta di pasti senza glutine",
   },
   {
+    isStaff: false,
     id: 16,
     trip_id: 1,
     name: "Lorenzo",
@@ -339,6 +355,7 @@ export const guests = [
     special_notes: "Viaggia con un animale domestico",
   },
   {
+    isStaff: false,
     id: 17,
     trip_id: 4,
     name: "Lucia",
@@ -360,6 +377,7 @@ export const guests = [
     special_notes: "Accesso per sedia a rotelle",
   },
   {
+    isStaff: false,
     id: 18,
     trip_id: 3,
     name: "Chiara",
@@ -381,6 +399,7 @@ export const guests = [
     special_notes: "Richiesta di pasti senza glutine",
   },
   {
+    isStaff: false,
     id: 19,
     trip_id: 2,
     name: "Lucia",
@@ -402,6 +421,7 @@ export const guests = [
     special_notes: "Viaggia con un animale domestico",
   },
   {
+    isStaff: false,
     id: 20,
     trip_id: 3,
     name: "Sofia",
@@ -427,6 +447,7 @@ export const guests = [
     special_notes: "Nessuna",
   },
   {
+    isStaff: false,
     id: 21,
     trip_id: 4,
     name: "Lucia",
@@ -452,6 +473,7 @@ export const guests = [
     special_notes: "Viaggia con un animale domestico",
   },
   {
+    isStaff: true,
     id: 22,
     trip_id: 4,
     name: "Chiara",
@@ -473,6 +495,7 @@ export const guests = [
     special_notes: "Richiesta di pasti senza glutine",
   },
   {
+    isStaff: false,
     id: 23,
     trip_id: 5,
     name: "Giulia",
@@ -494,6 +517,7 @@ export const guests = [
     special_notes: "Accesso per sedia a rotelle",
   },
   {
+    isStaff: false,
     id: 24,
     trip_id: 5,
     name: "Davide",
@@ -515,6 +539,7 @@ export const guests = [
     special_notes: "Camera tranquilla",
   },
   {
+    isStaff: true,
     id: 25,
     trip_id: 5,
     name: "Giulia",
@@ -536,6 +561,7 @@ export const guests = [
     special_notes: "Richiesta di pasti senza glutine",
   },
   {
+    isStaff: false,
     id: 26,
     trip_id: 2,
     name: "Andrea",
@@ -557,6 +583,7 @@ export const guests = [
     special_notes: "Nessuna",
   },
   {
+    isStaff: false,
     id: 27,
     trip_id: 5,
     name: "Lucia",
@@ -582,6 +609,7 @@ export const guests = [
     special_notes: "Accesso per sedia a rotelle",
   },
   {
+    isStaff: false,
     id: 28,
     trip_id: 3,
     name: "Lorenzo",
@@ -603,6 +631,7 @@ export const guests = [
     special_notes: "Nessuna",
   },
   {
+    isStaff: false,
     id: 29,
     trip_id: 1,
     name: "Andrea",
@@ -624,6 +653,7 @@ export const guests = [
     special_notes: "Accesso per sedia a rotelle",
   },
   {
+    isStaff: true,
     id: 30,
     trip_id: 2,
     name: "Anna",

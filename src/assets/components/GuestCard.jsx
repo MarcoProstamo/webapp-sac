@@ -8,7 +8,11 @@ export default function GuestCard({ guest }) {
           data-bs-target={"#modal" + guest.id}
         >
           <div className="card-body d-flex flex-column align-items-center justify-content-center">
-            <div className="avatar big mb-2">
+            <div
+              className={`d-inline-block avatar big mb-2 ${
+                guest.isStaff ? "text-bg-danger" : "text-bg-light"
+              }`}
+            >
               <i className="fa-solid fa-user"></i>
             </div>
             <h6 className="card-title">{`${guest.name} ${guest.surname}`}</h6>
