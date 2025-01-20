@@ -60,14 +60,11 @@ export default function ContactsPage() {
         <tbody>
           {guests &&
             guests.map((guest) => (
-              <tr
-                key={guest.id}
-                className="cursor-pointer"
-                data-bs-toggle="modal"
-                data-bs-target={"#modal" + guest.id}
-              >
+              <tr key={guest.id} className="cursor-pointer">
                 <td className="text-center">
                   <div
+                    data-bs-toggle="modal"
+                    data-bs-target={"#modal" + guest.id}
                     className={`d-inline-block avatar ${
                       guest.isStaff ? "text-bg-danger" : "text-bg-light"
                     }`}
@@ -75,8 +72,12 @@ export default function ContactsPage() {
                     {guest.name.charAt(0)}
                   </div>
                 </td>
-                <td>{guest.name}</td>
-                <td>{guest.surname}</td>
+                <td data-bs-toggle="modal" data-bs-target={"#modal" + guest.id}>
+                  {guest.name}
+                </td>
+                <td data-bs-toggle="modal" data-bs-target={"#modal" + guest.id}>
+                  {guest.surname}
+                </td>
                 <td className="text-center">
                   <button className="btn btn-warning mx-2">
                     <i className="fa-solid fa-pencil"></i>
