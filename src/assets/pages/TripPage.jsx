@@ -23,7 +23,7 @@ export default function TripPage() {
   function handleSubmit(e) {
     e.preventDefault();
     setFormData(initialData);
-    setGuests(allGuests);
+    setFilteredGuests(guests);
   }
 
   function handleChange(e) {
