@@ -56,15 +56,6 @@ export default function TripPage() {
 
       <div>
         <h1 className="text-center fw-semibold">{destination}</h1>
-        <button
-          className="btn btn-outline-success"
-          type="submit"
-          onClick={() => {
-            navigate(`/trips/newtrip/newmembers/${trip.id}`);
-          }}
-        >
-          Add Member
-        </button>
         <form className="d-flex mb-2" role="search" onSubmit={handleSubmit}>
           <input
             className="form-control me-2"
@@ -84,6 +75,19 @@ export default function TripPage() {
             filteredGuests.map((guest) => (
               <GuestCard key={guest.id} guest={guest} />
             ))}
+          <div
+            className="card h-100 cursor-pointer bg-transparent border-success bg-hover"
+            onClick={() => {
+              navigate(`/trips/newtrip/newmembers/${trip.id}`);
+            }}
+          >
+            <div className="card-body d-flex flex-column align-items-center justify-content-center">
+              <div className="avatar big text-bg-success d-inline-block mb-2">
+                <i className="fa-solid fa-plus"></i>
+              </div>
+              <h6 className="card-title text-success fw-semibold">{`Add Guest`}</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>

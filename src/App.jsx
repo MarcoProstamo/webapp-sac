@@ -8,9 +8,6 @@ import AddNewTripPage from "./assets/pages/AddNewTripPage";
 import NewMembersPage from "./assets/pages/NewMembersPage";
 
 export default function App() {
-  // # TODO
-  // Fix Bug ON Click Button in Contancts List
-
   return (
     <BrowserRouter>
       <Routes>
