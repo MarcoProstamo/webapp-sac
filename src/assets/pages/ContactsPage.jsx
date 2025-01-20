@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { guests as guestsAll } from "../data/guests";
 
 export default function ContactsPage() {
@@ -6,8 +6,15 @@ export default function ContactsPage() {
     term: "",
   };
   const [formData, setFormData] = useState(initialData);
-  const [guests, setGuests] = useState(guestsAll);
-
+  const [guests, setGuests] = useState(
+    guestsAll.sort((a, b) => {
+      const surnameComparison = a.surname.localeCompare(b.surname);
+      if (surnameComparison !== 0) {
+        return surnameComparison; // Ordina per cognome se diverso
+      }
+      return a.name.localeCompare(b.name); // Ordina per nome se i cognomi sono uguali
+    })
+  );
   function handleSubmit(e) {
     e.preventDefault();
     setFormData(initialData);
@@ -52,8 +59,8 @@ export default function ContactsPage() {
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">Name</th>
             <th scope="col">Surname</th>
+            <th scope="col">Name</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -73,10 +80,10 @@ export default function ContactsPage() {
                   </div>
                 </td>
                 <td data-bs-toggle="modal" data-bs-target={"#modal" + guest.id}>
-                  {guest.name}
+                  {guest.surname}
                 </td>
                 <td data-bs-toggle="modal" data-bs-target={"#modal" + guest.id}>
-                  {guest.surname}
+                  {guest.name}
                 </td>
                 <td className="text-center">
                   <button className="btn btn-warning mx-2">
