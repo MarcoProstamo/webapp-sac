@@ -1,5 +1,4 @@
 body {
-  background-color: lightgray;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,4 +25,8 @@ body {
 
 .bg-hover:hover {
   background-color: #19ec8a !important;
+}
+
+.shadow-bella {
+  box-shadow: 5px 5px 15px 1px gray;
 }

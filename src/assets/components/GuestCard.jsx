@@ -3,7 +3,7 @@ export default function GuestCard({ guest }) {
     <>
       <div className="col">
         <div
-          className="card h-100 cursor-pointer"
+          className="card h-100 cursor-pointer shadow-bella"
           data-bs-toggle="modal"
           data-bs-target={"#modal" + guest.id}
         >

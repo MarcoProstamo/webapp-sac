@@ -48,7 +48,7 @@ export default function TripPage() {
     <div className="container pb-5">
       <div className="row justify-content-center mt-5 mb-3">
         <div className="col-12 col-lg-5">
-          <div className="card border-0 rounded-5 overflow-hidden">
+          <div className="card border-0 rounded-5 overflow-hidden shadow-bella">
             <img src={img} alt={destination} />
           </div>
         </div>
@@ -70,22 +70,24 @@ export default function TripPage() {
           </button>
         </form>
 
-        <div className="row row-cols-3 g-1">
+        <div className="row row-cols-3 g-3">
           {filteredGuests &&
             filteredGuests.map((guest) => (
               <GuestCard key={guest.id} guest={guest} />
             ))}
-          <div
-            className="card h-100 cursor-pointer bg-transparent border-success bg-hover"
-            onClick={() => {
-              navigate(`/trips/newtrip/newmembers/${trip.id}`);
-            }}
-          >
-            <div className="card-body d-flex flex-column align-items-center justify-content-center">
-              <div className="avatar big text-bg-success d-inline-block mb-2">
-                <i className="fa-solid fa-plus"></i>
+          <div className="col">
+            <div
+              className="shadow-bella card h-100 cursor-pointer bg-transparent border-success bg-hover"
+              onClick={() => {
+                navigate(`/trips/newtrip/newmembers/${trip.id}`);
+              }}
+            >
+              <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                <div className="avatar big text-bg-success d-inline-block mb-2">
+                  <i className="fa-solid fa-plus"></i>
+                </div>
+                <h6 className="card-title text-success fw-semibold">{`Add Guest`}</h6>
               </div>
-              <h6 className="card-title text-success fw-semibold">{`Add Guest`}</h6>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function Card({ trip }) {
   return (
     <div className="col">
       <Link to={`/trips/${id}`} className="text-decoration-none">
-        <div className="card h-100 border-0">
+        <div className="card h-100 border-0 shadow-bella">
           <img src={img} className="card-img-top h-100" alt={destination} />
           <span className="text-center text-bg-secondary fs-1">
             {destination}

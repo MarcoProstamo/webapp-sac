@@ -48,7 +48,18 @@ export default function NewMembersPage() {
 
   return (
     <div className="container my-5">
-      <h1 className="fw-semibold text-center">Add New Guest</h1>
+      <div className="d-flex justify-content-between mb-4">
+        <h1 className="fw-semibold text-center">Add New Guest</h1>
+        <button
+          type="button"
+          className="btn btn-secondary"
+          onClick={() => {
+            navigate(-1);
+          }}
+        >
+          Back to Trip
+        </button>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-floating mb-3">
           <input
@@ -202,6 +213,7 @@ export default function NewMembersPage() {
           >
             Cancel
           </button>
+
           <button type="submit" className="btn btn-success">
             Add
           </button>
