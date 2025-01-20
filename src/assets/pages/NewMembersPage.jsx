@@ -49,7 +49,7 @@ export default function NewMembersPage() {
   return (
     <div className="container my-5">
       <div className="d-flex justify-content-between mb-4">
-        <h1 className="fw-semibold text-center">Add New Guest</h1>
+        <h1 className="fw-semibold text-center">Add New Traveler</h1>
         <button
           type="button"
           className="btn btn-secondary"
@@ -215,7 +215,7 @@ export default function NewMembersPage() {
           </button>
 
           <button type="submit" className="btn btn-success">
-            Add
+            Add Traveler
           </button>
         </div>
       </form>

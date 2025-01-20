@@ -86,7 +86,7 @@ export default function TripPage() {
                 <div className="avatar big text-bg-success d-inline-block mb-2">
                   <i className="fa-solid fa-plus"></i>
                 </div>
-                <h6 className="card-title text-success fw-semibold">{`Add Guest`}</h6>
+                <h6 className="card-title text-success fw-semibold">{`Add Traveler`}</h6>
               </div>
             </div>
           </div>

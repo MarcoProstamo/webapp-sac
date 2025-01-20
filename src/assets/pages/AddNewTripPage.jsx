@@ -128,7 +128,7 @@ export default function AddNewTripPage() {
             Cancel
           </button>
           <button type="submit" className="btn btn-success">
-            Add
+            Add Trip
           </button>
         </div>
       </form>
