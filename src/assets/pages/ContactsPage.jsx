@@ -15,6 +15,7 @@ export default function ContactsPage() {
       return a.name.localeCompare(b.name); // Ordina per nome se i cognomi sono uguali
     })
   );
+
   function handleSubmit(e) {
     e.preventDefault();
     setFormData(initialData);
@@ -22,16 +23,17 @@ export default function ContactsPage() {
   }
 
   function handleChange(e) {
-    let term = e.target.value;
+    const term = e.target.value;
     setFormData({
       term,
     });
+
     if (term) {
       setGuests(
         guestsAll.filter(
           (guest) =>
-            guest.name.toLowerCase().includes(formData.term.toLowerCase()) ||
-            guest.surname.toLowerCase().includes(formData.term.toLowerCase())
+            guest.name.toLowerCase().includes(term.toLowerCase()) ||
+            guest.surname.toLowerCase().includes(term.toLowerCase())
         )
       );
     } else {

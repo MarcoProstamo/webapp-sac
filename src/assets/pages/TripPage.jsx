@@ -35,8 +35,8 @@ export default function TripPage() {
       setFilteredGuests(
         guests.filter(
           (guest) =>
-            guest.name.toLowerCase().includes(formData.term.toLowerCase()) ||
-            guest.surname.toLowerCase().includes(formData.term.toLowerCase())
+            guest.name.toLowerCase().includes(term.toLowerCase()) ||
+            guest.surname.toLowerCase().includes(term.toLowerCase())
         )
       );
     } else {
