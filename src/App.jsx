@@ -10,7 +10,6 @@ import NewMembersPage from "./assets/pages/NewMembersPage";
 export default function App() {
   // # TODO
   // Fix Bug ON Click Button in Contancts List
-  // FIx Routing New Members
 
   return (
     <BrowserRouter>
@@ -19,12 +18,8 @@ export default function App() {
           <Route path="/trips">
             <Route index element={<HomePage></HomePage>} />
             <Route path=":id" element={<TripPage></TripPage>} />
-            <Route path="newtrip" element={<AddNewTripPage></AddNewTripPage>}>
-              <Route
-                path=":id/newmembers"
-                element={<NewMembersPage></NewMembersPage>}
-              />
-            </Route>
+            <Route path="newtrip" element={<AddNewTripPage></AddNewTripPage>} />
+            <Route path="newtrip/newmembers/:id" element={<NewMembersPage />} />
           </Route>
           <Route path="/contacts" element={<ContactsPage></ContactsPage>} />
           <Route path="*" element={<NotFoundPage></NotFoundPage>} />

@@ -1,14 +1,18 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { trips } from "../data/trips";
 import { guests as allGuests } from "../data/guests";
 import GuestCard from "../components/GuestCard";
 import { useState } from "react";
 
 export default function TripPage() {
+  const [allGuestsData, setAllGuestsData] = useState(allGuests);
   const { id } = useParams();
+  const navigate = useNavigate();
   const trip = trips.find((trip) => trip.id === parseInt(id));
   const { img, destination } = trip;
-  const guests = allGuests.filter((guest) => guest.trip_id === parseInt(id));
+  const guests = allGuestsData.filter(
+    (guest) => guest.trip_id === parseInt(id)
+  );
 
   const initialData = {
     term: "",
@@ -52,6 +56,15 @@ export default function TripPage() {
 
       <div>
         <h1 className="text-center fw-semibold">{destination}</h1>
+        <button
+          className="btn btn-outline-success"
+          type="submit"
+          onClick={() => {
+            navigate(`/trips/newtrip/newmembers/${trip.id}`);
+          }}
+        >
+          Add Member
+        </button>
         <form className="d-flex mb-2" role="search" onSubmit={handleSubmit}>
           <input
             className="form-control me-2"
@@ -65,6 +78,7 @@ export default function TripPage() {
             Cancel
           </button>
         </form>
+
         <div className="row row-cols-3 g-1">
           {filteredGuests &&
             filteredGuests.map((guest) => (

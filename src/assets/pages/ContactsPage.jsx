@@ -143,45 +143,15 @@ export default function ContactsPage() {
                         </span>
                       </li>
                       <li className="list-group-item">
-                        Address:{" "}
-                        <span className="badge fs-6 text-bg-secondary">
-                          {guest.address}
-                        </span>
-                      </li>
-                      <li className="list-group-item">
                         Passport number:{" "}
                         <span className="badge fs-6 text-bg-secondary">
                           {guest.passport_number}
                         </span>
                       </li>
                       <li className="list-group-item">
-                        Dietary Preferences:{" "}
-                        <span className="badge fs-6 text-bg-secondary">
-                          {guest.dietary_preferences}
-                        </span>
-                      </li>
-                      <li className="list-group-item">
-                        Allergies:{" "}
-                        <span className="badge fs-6 text-bg-secondary">
-                          {guest.allergies}
-                        </span>
-                      </li>
-                      <li className="list-group-item">
-                        Languages Spoken:{" "}
-                        <span className="badge fs-6 text-bg-secondary">
-                          {guest.languages_spoken.join(", ")}
-                        </span>
-                      </li>
-                      <li className="list-group-item">
                         Emergency Contact:{" "}
                         <span className="badge fs-6 text-bg-secondary">
-                          {guest.emergency_contact.phone}
-                        </span>
-                      </li>
-                      <li className="list-group-item">
-                        Travel Insurance:{" "}
-                        <span className="badge fs-6 text-bg-secondary">
-                          {guest.travel_insurance}
+                          {guest.emergency_contact}
                         </span>
                       </li>
                     </ul>

@@ -28,8 +28,8 @@ export default function AddNewTripPage() {
   function handleSubmit(e) {
     e.preventDefault();
     trips.push(formData);
-    navigate(`/trips/newtrip/${formData.id}/newmembers`);
     setFormData(formInitialData);
+    navigate(`/trips/${formData.id}`);
   }
 
   function handleCancel() {

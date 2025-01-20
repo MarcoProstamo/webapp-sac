@@ -26,6 +26,9 @@ export default function Navbar() {
             <NavLink to="/contacts" className="nav-link">
               Contacts
             </NavLink>
+            <NavLink to="/trips/newtrip" className="nav-link">
+              Add Trip
+            </NavLink>
           </div>
         </div>
       </div>
